@@ -1,13 +1,15 @@
 var gettablinks = document.getElementsByClassName('tablinks');  // HTML Collection
 var gettabpanes = document.getElementsByClassName('tab-pane');
-// console.log(gettabpanes);
+console.log(gettabpanes);
 var getbtncloses = document.querySelectorAll('.btn-close');  // NodeList
+console.log(getbtncloses);
 
 var tabpanes = Array.from(gettabpanes);
 
 function gettab(evn,linkid){
 
     // console.log(evn.target);
+    // console.log(linkid);
 
     tabpanes.forEach(function(tabpane){
         tabpane.style.display = "none";
